@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/url.css') }}">
+    <title>URL Detection</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="" class="phishieldlogo">
+            </div>
+            <div class="navItem">
+                <a href="{{ url_for('home') }}" class="nav_link">Home</a>
+                <a href="{{ url_for('services') }}" class="nav_link">Services</a>
+                <a href="{{ url_for('contact_us') }}" class="nav_link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="mo">URL Detection</h1>
+        <form method="POST" action="{{ url_for('url_detection') }}">
+            <textarea id="textarea" name="url" rows="6" cols="50" placeholder="Enter your URL Source here"></textarea>
+            <button type="submit" id="Check" class="button" role="button">Check</button>
+        </form>
+        {% if url_result %}
+            <h2 class="result">The URL is: {{ url_result }}</h2>
+        {% endif %}
+    </div>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.facebook.com">
+                        <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://x.com">
+                        <img src="{{ url_for('static', filename='images/X.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://web.whatsapp.com">
+                        <img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="" class="fIcon">
+                    </a>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">@phishield.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Awareness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/awareness.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="PhiShield Logo" class="phishieldlogo">
+            </div>
+            <div class="navItem">
+                <a href="{{ url_for('home') }}" class="nav_link">Home</a>
+                <a href="{{ url_for('services') }}" class="nav_link">Services</a>
+                <a href="{{ url_for('contact_us') }}" class="nav_link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Cyber Security Awareness</h1>
+        </header>
+        <section>
+            <h2>Knowledge</h2>
+            <ul>
+                <li>Understand the dangers lurking online.</li>
+                <li>Learn about different cyber threats like malware, phishing attacks, and ransomware.</li>
+                <li>Grasp how these attacks work and the potential harm they can cause.</li>
+                <li>Be aware of online dangers like phishing emails (fake emails trying to steal information), malware (harmful software), ransomware (locks your data and demands money), and social engineering (tricks to get private information).</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Attitude</h2>
+            <ul>
+                <li>Recognize the importance of online safety.</li>
+                <li>Be willing to take steps to protect yourself.</li>
+                <li>Understand that a positive attitude means recognizing the importance of online safety.</li>
+                <li>Know that a negative attitude might lead to ignoring security measures or thinking you're not at risk.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Behavior</h2>
+            <ul>
+                <li>Take actions to stay safe online.</li>
+                <li>Use strong passwords, mixing uppercase/lowercase letters, numbers, and symbols.</li>
+                <li>Enable two-factor authentication (2FA) to add an extra layer of security.</li>
+                <li>Keep your software updated, as updates often fix security vulnerabilities hackers can exploit.</li>
+                <li>Be cautious of suspicious links and attachments.</li>
+                <li>Avoid accessing sensitive information on public Wi-Fi, and consider using a Virtual Private Network (VPN) for extra protection.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Practical Tips</h2>
+            <ul>
+                <li>Cyber Threats: Be aware of online dangers like phishing emails, malware, ransomware, and social engineering.</li>
+                <li>Spot Phishing Emails:
+                    <ul>
+                        <li>Check the sender's email address for mistakes.</li>
+                        <li>Watch for urgency trying to pressure you.</li>
+                        <li>Inspect links before clicking (hover over them to see the real destination).</li>
+                        <li>Look for bad grammar/spelling.</li>
+                    </ul>
+                </li>
+                <li>Create Strong Passwords:
+                    <ul>
+                        <li>Mix uppercase/lowercase letters, numbers, and symbols.</li>
+                        <li>Avoid easy passwords.</li>
+                        <li>Use at least 12 characters.</li>
+                        <li>Click here to generate a strong password <a href="{{ url_for('password_generator') }}" class="password">Password Generator</a></li>
+                    </ul>
+                </li>
+                <li>Enable Two-Factor Authentication (2FA): Add an extra layer of security by requiring a second verification step besides your password.</li>
+                <li>Keep Software Updated: Updates often fix security vulnerabilities hackers can exploit. Enable automatic updates if possible.</li>
+                <li>Be Cautious with Public Wi-Fi: Avoid accessing sensitive information on public Wi-Fi. Consider using a Virtual Private Network (VPN) for extra protection.</li>
+                <li>Stay Informed and Share Knowledge: Learn about new cyber threats. Share what you learn to keep everyone safe online.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Importance of Training</h2>
+            <ul>
+                <li>Training Employees: Emphasize the need for training employees to recognize these threats and take necessary precautions.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Safeguarding Information</h2>
+            <ul>
+                <li>Handling Sensitive Information: Follow best practices for handling sensitive information. Use strong passwords and maintain secure browsing habits.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Policies and Procedures</h2>
+            <ul>
+                <li>Clear Policies: Have clear policies on email usage, removable media, and remote work practices.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Incident Response</h2>
+            <ul>
+                <li>Preparing for Security Incidents: Prepare employees for security incidents. Ensure they know their role in responding to these incidents.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.facebook.com">
+                        <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook" class="fIcon">
+                    </a>
+                    <a href="https://x.com">
+                        <img src="{{ url_for('static', filename='images/X.png') }}
+                        " alt="Twitter" class="fIcon">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" class="fIcon">
+                    </a>
+                    <a href="https://web.whatsapp.com">
+                        <img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="WhatsApp" class="fIcon">
+                    </a>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">@phishield.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

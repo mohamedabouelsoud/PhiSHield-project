@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+nav {
+  background-color: #117da8;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.nav_link {
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navItem a {
+  margin-right: 20px;
+}
+
+.nav_link:hover {
+  color: #d9d9d9;
+}
+
+.phishieldlogo {
+  width: 80px;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  margin-left: 0px;
+  
+}
+.mo {
+ margin-left: 150px;
+ font-size: 45px;
+ color: #117da8;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #117da8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  resize: vertical;
+  margin-left: 650px;
+  display: block;
+}
+
+.button {
+  background-image: linear-gradient(144deg, #0d5b7d , #117da8  50%, #33a8d1);
+  border: 0;
+  border-radius: 16px;
+  box-shadow: rgba(10, 77, 102, 0.5) 0 15px 30px -5px;
+  color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: -200px;
+  align-content: center;
+  display: block;
+  margin-left: 900px;  
+}
+
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.result{
+  text-align: center;
+  margin-left: 150px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #117da8;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 90%;
+}
+
+.fMenuTitle {
+  font-size: 25px;
+  color: white;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fIcons {
+  display: flex;
+  color: white;
+}
+
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+.footerLeft {
+  padding: 20px;
+  width: 90%;
+}

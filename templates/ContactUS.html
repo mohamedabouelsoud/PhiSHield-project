@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Contact Us Form | CodingLab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ContactUS.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="nav">
+    <div class="navTop">
+        <div class="navItem">
+            <img src="{{ url_for('static', filename='images/2.png') }}" alt="" class="phishieldlogo">
+        </div>
+        <div class="navItem">
+            <a href="{{ url_for('home') }}" class="nav_link">Home</a>
+            <a href="{{ url_for('services') }}" class="nav_link">Services</a>
+            <a href="{{ url_for('contact_us') }}" class="nav_link">Contact</a>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="mo">Contact Us</h1>
+    <div class="container">
+        
+        <div class="content">
+            <div class="left-side">
+                <div class="details address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Heliopolis, Cairo</div>
+                    <div class="text-two">Egypt</div>
+                </div>
+                <div class="details phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+201149977231</div>
+                </div>
+                <div class="details email">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">mohamedabouelsoud18@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerLeft">
+        <div class="footerMenu"></div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <a href="https://www.facebook.com">
+                    <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="" class="fIcon">
+                </a>
+                <a href="https://x.com">
+                    <img src="{{ url_for('static', filename='images/X.png') }}" alt="" class="fIcon">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" class="fIcon">
+                </a>
+                <a href="https://web.whatsapp.com">
+                    <img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="" class="fIcon">
+                </a>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@phishield.com</span>
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

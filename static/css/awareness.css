@@ -1,0 +1,222 @@
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    height: 120%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  
+  nav {
+    background-color: #117da8;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+  }
+  
+  .nav_link {
+    font-size: 19px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navItem a {
+    margin-right: 20px;
+  }
+  
+  .nav_link:hover {
+    color: #d9d9d9;
+  }
+  
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .phishieldlogo {
+    width: 80px;
+    height: auto;
+  }
+  
+  
+  .image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10%;
+  }
+  .image_container img {
+    max-width: 100%;
+    max-height: 75%;
+  
+  }
+
+
+
+
+
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #117da8;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #117da8;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background: #e7f3ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #0073e6;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+ul ul li {
+    background: #fff;
+    border-left: 4px solid #e7f3ff;
+    padding-left: 14px;
+}
+
+
+
+
+.password{
+  color: #117da8;
+}
+
+
+
+
+
+
+  
+
+footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 25px;
+    color: white;
+  }
+  
+  .fListItem {
+    padding: 0;
+    list-style: none;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .fIcons {
+    display: flex;
+    color: white;
+  }
+  
+  .fIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .copyright {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    background-color: #117da8;
+  }
+  
+  .fList {
+    color: white;
+  }
+  
+  .footerLeft {
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .footerRight {
+    padding: 20px;
+    width: 90%;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+  

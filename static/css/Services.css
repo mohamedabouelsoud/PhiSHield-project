@@ -1,0 +1,467 @@
+/*
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper h1{
+    font-size: 3em;
+    color: #fff;
+    margin: 25px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+.card i{
+    margin: 20px;
+    color: #581ed6;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg.jpg');
+                                    background-size: cover;
+}
+
+/* .card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                   rgba(0, 0, 0, 0.7) 0% ,
+                                   rgba(255, 255, 255, 0.7)100% ) ,
+                                    url('bg2.jpg');
+                                    background-size: cover;
+} */
+/*
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg3.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                   rgba(88, 70, 159, 0.7) 0% ,
+                                   rgba(136, 113, 199, 0.7)100% ) ,
+                                    url('bg4.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+                                   rgba(51, 0, 255, 0.7) 0% ,
+                                   rgba(214, 11, 255, 0.7)100% ) ,
+                                    url('bg5.jpg');
+                                    background-size: cover;
+
+                                
+}
+.bx-lock {
+    font-size: 2em; /* Adjust the size as needed //
+  }
+
+/* .card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+                                   rgba(255, 0, 0, 0.7) 0% ,
+                                   rgba(217, 255, 0, 0.7)100% ) ,
+                                    url('bg2.jpg');
+                                    background-size: cover;
+} */
+ /*
+@media(max-width:991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+body {
+    background-image: url('/img/NervesGif.gif');
+    background-size: cover;
+}
+
+.nav {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav,
+  .nav_item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+  }
+  .nav_logo,
+  .nav_link,
+  .button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 0 10px;
+    font-size: 25px;
+  }
+  .nav_logo {
+    font-size: 25px;
+  }
+  .nav_item {
+    column-gap: 25px;
+  }
+  .nav_logo_img {
+    height: 50px; 
+    width: auto;  
+    margin-right: -50px; 
+    vertical-align: middle; 
+  }
+  .nav_link:hover {
+    color: #d9d9d9;
+  }
+
+  */
+
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  
+  nav {
+    background-color: #117da8;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+  }
+  
+  .nav_link {
+    font-size: 19px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navItem a {
+    margin-right: 20px;
+  }
+  
+  .nav_link:hover {
+    color: #d9d9d9;
+  }
+  
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .phishieldlogo {
+    width: 80px;
+    height: auto;
+  }
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+    color: #117da8;
+    margin: 25px;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 800px; /* Adjust as needed */
+    margin-top: 30px;
+}
+
+.card {
+    min-height: 220px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    margin: 20px;
+    color: #117da8;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+
+.card p {
+    color: #117da8;
+    text-align: center;
+}
+
+.card:hover i,
+.card:hover p {
+    color: #fff;
+}
+
+.card:hover h2 {
+    font-weight: 600;
+}
+
+.bx-lock {
+    font-size: 2em; /* Adjust the size as needed */
+}
+
+.bx-link-alt{
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                   rgba(62, 155, 205, 0.7) 0% ,
+                                   rgba(15, 92, 129, 0.7)100% ) ,
+                                    url('bg.jpg');
+                                    background-size: cover;
+}
+
+ .card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                    rgba(62, 155, 205, 0.7) 0% ,
+                                    rgba(15, 92, 129, 0.7)100% ) ,
+                                    url('bg2.jpg');
+                                    background-size: cover;
+} 
+
+
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                    rgba(62, 155, 205, 0.7) 0% ,
+                                    rgba(15, 92, 129, 0.7)100% ) ,
+                                    url('bg3.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                    rgba(62, 155, 205, 0.7) 0% ,
+                                    rgba(15, 92, 129, 0.7)100% ) ,
+                                    url('bg4.jpg');
+                                    background-size: cover;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .content-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 25px;
+    }
+
+    .content-box {
+        max-width: 100%;
+    }
+}
+
+
+.service_link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+.test{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 25px;
+    color: white;
+  }
+  
+  .fListItem {
+    padding: 0;
+    list-style: none;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .fIcons {
+    display: flex;
+    color: white;
+  }
+  
+  .fIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .copyright {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    background-color: #117da8;
+  }
+  
+  .fList {
+    color: white;
+  }
+  
+  .footerLeft {
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .footerRight {
+    padding: 20px;
+    width: 90%;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+  

@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 120%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+nav {
+  background-color: #117da8;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.nav_link {
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navItem a {
+  margin-right: 20px;
+}
+
+.nav_link:hover {
+  color: #d9d9d9;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phishieldlogo {
+  width: 80px;
+  height: auto;
+}
+
+
+.image_container {
+  display: flex;
+  size: 250px;
+  justify-content: center;
+  align-items: center;
+  margin: -10%;
+  margin-left: 15px;
+}
+.image_container img {
+  max-width: 100%;
+  max-height: 75%;
+
+}
+
+.define {
+  text-align: center;
+}
+
+
+.main-content {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.emailGif,
+.urlGif {
+  width: 630px; /* Adjust as needed */
+  height: auto;
+  margin-top: -150px; /* Raise the images */
+}
+
+.button-email,
+.button-url {
+  background-image: linear-gradient(144deg, #0d5b7d , #117da8  50%, #33a8d1 );
+  border: 0;
+  border-radius: 16px;
+  box-shadow: rgba(10, 77, 102, 0.5) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  font-size: 25px;
+  line-height: 2em;
+  padding: 10px 25px;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 20px; /* Add margin to create space between buttons */
+  margin-top: 150px; /* Raise the images */
+
+}
+
+
+
+.button-email:hover,
+.button-url:hover {
+  transform: translateY(-2px);
+}
+
+.button-email:active,
+.button-url:active {
+  transform: translateY(0);
+}
+
+
+
+
+footer {
+  display: flex;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 25px;
+  color: white;
+}
+
+.fListItem {
+  padding: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+.fIcons {
+  display: flex;
+  color: white;
+}
+
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  background-color: #117da8;
+}
+
+.fList {
+  color: white;
+}
+
+.footerLeft {
+  padding: 20px;
+  width: 90%;
+}
+
+.footerRight {
+  padding: 20px;
+  width: 90%;
+  align-items: center;
+  background-color: whitesmoke;
+}

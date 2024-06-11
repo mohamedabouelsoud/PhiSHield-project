@@ -1,0 +1,195 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.mo{
+    margin-left: 870px;
+    color: #117da8;
+   
+}
+
+.container {
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 800px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.left-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.left-side .details i {
+    font-size: 30px;
+    color: #117da8;
+    margin-bottom: 10px;
+}
+
+.left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.left-side .details .text-one,
+.left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+        justify-content: center;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #117da8;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.nav_link {
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navItem a {
+  margin-right: 20px;
+}
+
+.nav_link:hover {
+  color: #d9d9d9;
+}
+
+.phishieldlogo {
+  width: 80px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #117da8;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+}
+
+.footerRightMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fMenuTitle {
+  font-size: 25px;
+  color: white;
+}
+
+.fListItem {
+  padding: 0;
+  list-style: none;
+  font-family: "Lato", sans-serif;
+}
+
+.fIcons {
+  display: flex;
+  color: white;
+}
+
+.fIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.copyright {
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+

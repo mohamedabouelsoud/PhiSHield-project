@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Services.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="" class="phishieldlogo">
+            </div>
+            <div class="navItem">
+                <a href="{{ url_for('home') }}" class="nav_link">Home</a>
+                <a href="{{ url_for('services') }}" class="nav_link">Services</a>
+                <a href="{{ url_for('contact_us') }}" class="nav_link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <h1>Our Services</h1>
+        <div class="content-box">
+            <a href="{{ url_for('email_detection') }}" class="test">
+                <div class="card">
+                    <i class="bx bx-envelope bx-md"></i>
+                    <h2>Email Detection</h2>
+                    <p>Recognizing fake emails trying to trick you into giving away personal information or installing harmful software.</p>
+                </div>
+            </a>
+            <a href="{{ url_for('url_detection') }}" class="test">
+                <div class="card">
+                    <i class='bx bx-link-alt'></i>
+                    <h2>URL Detection</h2>
+                    <p>Identifying fake website links that look real but are actually designed to steal your information.</p>
+                </div>
+            </a>
+            <a href="{{ url_for('password_generator') }}" class="test">
+                <div class="card">
+                    <i class='bx bx-lock'></i>
+                    <h2>Strong Password Generator</h2>
+                    <p>Creating super secure passwords automatically to keep your accounts safe from hackers.</p>
+                </div>
+            </a>
+            <a href="{{ url_for('cyber_awareness') }}" class="test">
+                <div class="card">
+                    <i class='bx bx-shield bx-md'></i>
+                    <h2>Cyber Awareness</h2>
+                    <p>Understanding how to stay safe online by knowing about potential dangers and the best ways to protect yourself and your information.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu"></div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.facebook.com">
+                        <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://x.com">
+                        <img src="{{ url_for('static', filename='images/X.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" class="fIcon">
+                    </a>
+                    <a href="https://web.whatsapp.com">
+                        <img src="{{ url_for('static', filename='images/whatsapp.png') }}" alt="" class="fIcon">
+                    </a>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">@phishield.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
